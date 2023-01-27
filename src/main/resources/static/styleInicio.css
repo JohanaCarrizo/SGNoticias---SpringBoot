@@ -1,0 +1,48 @@
+/*body {
+    width: 900px;
+    margin: auto;
+    padding: 60px 10px; 
+    box-shadow: 5px 10px 30px black;
+    background-color: tomato;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.btn {
+    text-align: center;
+    width: 500px
+}
+
+.btn:hover {
+    background-color: teal;
+    color: black;
+    font-weight: bold;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.col {
+    text-align: center;
+}
+
+.card-title, .card-text {
+    text-align: center;
+}*/
+
+.card-link {
+    color: black;
+}
+
+.card-link:hover {
+    color: white;
+}
+
+/*.card-body {
+    background-color: darksalmon;
+}*/
