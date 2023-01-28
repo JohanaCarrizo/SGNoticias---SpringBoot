@@ -9,7 +9,10 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+        <!-- Iconos Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     </head>
     <body style="background: #000046;
                       background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
@@ -25,35 +28,36 @@ and open the template in the editor.
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ms-auto">
-                        <a class="nav-link active" aria-current="page" th:href="@{/}">Ver como Usuario</a>
-                        <a class="nav-link" th:href="@{/panelAdmin/gestionar}">Ver como Administrador</a>
+                        <!--<a class="nav-link active" aria-current="page" th:href="@{/}">Ver como Usuario</a>
+                        <a class="nav-link" th:href="@{/panelAdmin/gestionar}">Ver como Administrador</a>-->
                     </div>
                 </div>
             </div>
         </nav>
         
         <!-- Contenedor principal de modificacion -->
-        <div class="container" align="center">
+        <div class="container my-3" align="center">
                    
             <h1 style="text-align: center; padding-top: 20px; color: rgb(197, 226, 250);">Modificar Noticia</h1>
             <hr>
             
-            <form th:action="@{/panelAdmin/modificarNoticia/__${noticia.id}__}" method="POST">
+            <form th:action="@{/panelAdmin/modificarNoticia/__${noticia.id}__}" method="POST" class="px-3 py-3" style="background-color: rgb(36, 36, 36); border: ridge;">
                 
                 <input hidden th:value="${id}" name="id">
                 <div class="form-floating mb-4">
-                    <input th:value="${noticia.nombre}" name="titulo" type="text" class="form-control" id="floatingInput" placeholder="titulo">
-                    <label for="floatingInput">Título</label>
+                    <input th:value="${noticia.nombre}" name="titulo" type="text" class="form-control" id="floatingInput" placeholder="titulo" style="background-color: rgb(36, 36, 36); color: white; font-size: 1.3em; font-family: monospace;">
+                    <label for="floatingInput" style="color: white">Título</label>
                 </div>
             
                 <div class="form-floating">
-                    <textarea th:text="${noticia.cuerpo}" name="cuerpo" class="form-control" placeholder="cuerpo" id="floatingTextarea2" style="height: 250px"></textarea>
-                    <label for="floatingTextarea2">Cuerpo</label>
+                    <textarea th:text="${noticia.cuerpo}" name="cuerpo" class="form-control" placeholder="cuerpo" id="floatingTextarea2" style="height: 400px; background-color: rgb(36, 36, 36); color: white; font-size: 1.3em; font-family: monospace;"></textarea>
+                    <label for="floatingTextarea2" style="color: white">Cuerpo</label>
                 </div>
                 
-                <div style="padding-top: 20px">
-                    <button align="center" type="submit" class="btn btn-dark" style="width: 200px; margin: 10px;">Guardar</button>
-                    <a th:href="@{/panelAdmin/gestionar}" align="center" class="btn btn-dark" style="width: 200px;">Volver</a>
+                <div style="padding-top: 20px; text-align: left">
+                    <a th:href="@{/panelAdmin/gestionar}" align="left" class="btn btn-secondary" style="width: 100px;"><i class="bi bi-arrow-bar-left" style="margin-right: 5px; color: white;"></i>Volver</a>
+                    <button align="center" type="submit" class="btn btn-success" style="width: 200px; margin: 10px;"><i class="bi bi-save" style="margin-right: 10px"></i>Guardar</button>
+                    
                 </div>
                 
              </form>

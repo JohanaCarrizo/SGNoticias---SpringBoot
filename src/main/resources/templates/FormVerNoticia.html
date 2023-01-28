@@ -9,22 +9,43 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+        <!-- Iconos Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     </head>
     
     <body style="background: #000046;
                           background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
                           background: linear-gradient(to right, #1CB5E0, #000046);">
         
-        <div class="container" style="padding-top: 60px;">
-            <div class="card text-bg-dark mb-3 container-fluid">
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><i class="bi bi-journal-bookmark-fill"></i>SGNoticia</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                        <!--<a class="nav-link active" aria-current="page" th:href="@{/}">Ver como Usuario</a>
+                        <a class="nav-link" th:href="@{/panelAdmin/gestionar}">Ver como Administrador</a>-->
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="container" style="padding-top: 60px; ">
+            <div class="card text-bg-dark mb-3 container-fluid" style="border: ridge;">
                 <div class="card-body">
                     <h2 th:text="${noticia.nombre}" class="card-header" style="text-align: center;"></h2>
-                    <p th:text="${noticia.cuerpo}" class="my-5" style="padding: 30px; font-size: 1.3em; font-family: monospace; text-align: left;"></p>
+                    <br>
+                    <textarea th:text="${noticia.cuerpo}" class="form-control" style="height: 500px; background-color: rgb(36, 36, 36); color: white; padding: 30px; font-size: 1.3em; font-family: monospace; text-align: left;"></textarea>
                 </div>
             </div>
             <br>
-            <a th:href="@{/}" align="center" class="btn btn-dark" style="width: 200px;"><-- Volver</a>
+            <a th:href="@{/}" align="center" class="btn btn-dark" style="width: 150px;"><i class="bi bi-arrow-bar-left" style="margin-right: 5px; color: white;"></i>Volver</a>
         </div>
         
         

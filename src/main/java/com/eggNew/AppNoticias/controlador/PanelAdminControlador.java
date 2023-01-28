@@ -48,7 +48,7 @@ public class PanelAdminControlador {
         } catch (MiException ex) {
             
             modelo.put("error", ex.getMessage());
-            return "FormCrearNoticia.html";
+            return "redirect:/panelAdmin/gestionar";
         }
         
         return "redirect:/panelAdmin/gestionar";

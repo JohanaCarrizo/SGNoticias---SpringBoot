@@ -22,7 +22,15 @@ public class Noticia {
     
     public String getSubstringDelCuepo(){
         
-        return cuerpo.substring(0, 50).concat("...");
+        if(cuerpo.length()<50){
+            
+            return cuerpo;        
+        }else{
+        
+            return cuerpo.substring(0, 50).concat("...");
+        }
+        
+        
     
     }
     
