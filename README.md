@@ -7,6 +7,25 @@ Sistemas de Gestión de Noticias esta orientado a la institución EGG, en donde 
 :small_blue_diamond: Ver como usuario: Funcionalidad que unicamente nos permiter leer las notiicas publicadas. <br>
 :small_blue_diamond: Ver como administrador: Funcionalidad que no permite la administración de las noticias (Crear, Modificar, Eliminar) <br>
 
-<p align="center">
-   <img src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green">
-   </p>
+
+<h1 align="center"> Vista usuario </h1>
+
+![Vista usuario](https://user-images.githubusercontent.com/94977362/215283406-98189241-15c0-426e-8b31-3e401d208840.jpg)
+
+<h1 align="center"> Leer noticia </h1>
+
+![Leer noticia](https://user-images.githubusercontent.com/94977362/215283431-a13beaa7-cfce-44bb-9c2a-e32064b84df5.jpg)
+
+<h1 align="center"> Vista admin </h1>
+
+![vista admin](https://user-images.githubusercontent.com/94977362/215283441-65c34320-db4a-4e8a-ae0c-d26ca165d9b9.jpg)
+
+<h1 align="center"> Crear noticia </h1>
+
+![crear noticia](https://user-images.githubusercontent.com/94977362/215283738-862674d9-8562-49cc-aca4-bf09c6392411.jpg)
+
+<h1 align="center"> Modificar noticia </h1>
+
+![Editar noticia](https://user-images.githubusercontent.com/94977362/215283446-3b5b28ee-2e90-4bc2-aa8b-600d9e0f8f84.jpg)
+
+
