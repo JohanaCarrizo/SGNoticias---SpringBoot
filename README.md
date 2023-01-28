@@ -4,7 +4,7 @@ Sistemas de Gestión de Noticias esta orientado a la institución EGG, en donde 
 <hr>
 :hammer:Funcionalidades del proyecto <br>
 
-:small_blue_diamond: Ver como usuario: Funcionalidad que unicamente nos permiter leer las notiicas publicadas. <br>
+:small_blue_diamond: Ver como usuario: Funcionalidad que unicamente nos permiter leer las noticias publicadas. <br>
 :small_blue_diamond: Ver como administrador: Funcionalidad que no permite la administración de las noticias (Crear, Modificar, Eliminar) <br>
 
 
