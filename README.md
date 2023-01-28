@@ -7,6 +7,14 @@ Sistemas de Gestión de Noticias esta orientado a la institución EGG, en donde 
 :small_blue_diamond: Ver como usuario: Funcionalidad que unicamente nos permiter leer las noticias publicadas. <br>
 :small_blue_diamond: Ver como administrador: Funcionalidad que no permite la administración de las noticias (Crear, Modificar, Eliminar) <br>
 
+:heavy_check_mark: Teconologias utilizadas <br>
+:small_blue_diamond: Java <br>
+:small_blue_diamond: MySQL <br>
+:small_blue_diamond: Spring Boot + Thymeleaf <br>
+:small_blue_diamond: HTML <br>
+:small_blue_diamond: Bootstrap <br>
+:warning: Por alguna extraña razon mis archivos CSS personalizados no funciona. Tuve que poner algunos estilos en los archivos HTML
+
 
 <h1 align="center"> Vista usuario </h1>
 
